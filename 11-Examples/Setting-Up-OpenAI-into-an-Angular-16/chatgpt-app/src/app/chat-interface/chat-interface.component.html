@@ -1,4 +1,8 @@
-<form>
-    <input title="Question" type="text" />
-    <button class="button" type="submit">Send</button>
-</form>
+<div class="container-chat">
+    <form [formGroup]="chatGPTForm" (ngSubmit)="sendQuestion()">
+        <label for="first-name">Write an question to ChatGPT:</label>
+        <input title="Question" formControlName="question" name="question" placeholder="What is ChatGPT" type="text" />
+        <button type="submit">Send</button>
+        <p> ChatGPT result is: {{chatGPTMessage}} </p>
+    </form>
+</div>
