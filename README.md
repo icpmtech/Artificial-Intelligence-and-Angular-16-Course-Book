@@ -41,15 +41,15 @@ Angular requires Node.js and npm (Node Package Manager) to function:
 * Visit [Node.js official website]([https://nodejs.org/](https://nodejs.org/)) ) and download the LTS version.
 * After installation, you can verify the installation by running the following commands in your terminal or command prompt:
 
-| bash``node -v`` npm-v |
-| ----------------------------------- |
+| bash ``node -v`` npm-v |
+| ---------------------- |
 
 ### 3. Install Angular CLI:
 
 The Angular CLI (Command Line Interface) is a tool to initialize, develop, and maintain Angular applications:
 
 | bash``npminstall -g @angular/cli |
-| --------------------------------------- |
+| -------------------------------- |
 
 ### 4. Extensions for VSCode:
 
@@ -84,20 +84,20 @@ To install an extension:
 
 With everything set up, you can now create a new Angular project directly from the terminal or command prompt:
 
-| bash``ngnewmy-angular-app``cd my-angular-app |
-| ---------------------------------------------------------- |
+| bash ``ngnewmy-angular-app``cd my-angular-app |
+| --------------------------------------------- |
 
 To open the project in VSCode, you can use:
 
 | bash``code . |
-| ------------------- |
+| ------------ |
 
 ### 6. Running the Angular App:
 
 Inside the project directory, run the following command to start the development server:
 
 | bash``ng serve |
-| --------------------- |
+| -------------- |
 
 Visit `http://localhost:4200/` in your browser, and you should see the default Angular welcome page.
 
@@ -118,27 +118,27 @@ TensorFlow.js requires Node.js and npm for development:
 * Visit [Node.js official website](https://nodejs.org/) and download the LTS version.
 * After installation, verify it by running the following commands in your terminal or command prompt:
 
-| bash``node -v`` npm-v |
-| ----------------------------------- |
+| bash ``node -v`` npm-v |
+| ---------------------- |
 
 ### 3. Create a New Node.js Project:
 
 Initialize a new Node.js project by creating a new directory and initializing it:
 
-| bash``mkdir my-tfjs-project``cd my-tfjs-project``npminit -y |
-| -------------------------------------------------------------------------------- |
+| bash ``mkdir my-tfjs-project``cd my-tfjs-project``npminit -y |
+| ------------------------------------------------------------ |
 
 ### 4. Install TensorFlow.js:
 
 Within your project directory, install TensorFlow.js using npm:
 
 | bash``npminstall @tensorflow/tfjs-node |
-| --------------------------------------------- |
+| -------------------------------------- |
 
 For GPU support (on systems with compatible NVIDIA graphics cards and CUDA installed), use:
 
 | bash``npminstall @tensorflow/tfjs-node-gpu |
-| ------------------------------------------------- |
+| ------------------------------------------ |
 
 ### 5. Extensions for VSCode:
 
@@ -167,15 +167,15 @@ To install an extension:
 
 Now, you can create a new `.js` file in your project, for example, `index.js`. Open this file in VSCode and start writing your TensorFlow.js code:
 
-| javascript``const tf =require('@tensorflow/tfjs-node');``//Define a modelforlinear regression.``const model = tf.sequential();``model.add(tf.layers.dense({ units:1, inputShape: [1] }));``//...`` |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| javascript ``const tf =require('@tensorflow/tfjs-node');``//Define a modelforlinear regression.``const model = tf.sequential();``model.add(tf.layers.dense({ units:1, inputShape: [1] }));``//...`` |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ### 7. Running Your TensorFlow.js Code:
 
 You can run your TensorFlow.js code using Node.js. For the `index.js` file:
 
 | bash``node index.js |
-| -------------------------- |
+| ------------------- |
 
 With the above steps, you have successfully set up TensorFlow.js for development in VSCode. As you delve deeper into TensorFlow.js, you'll find its integration with modern JavaScript and Node.js features to be a powerful combination for machine learning development in this book we will explore that with the Angular and TensorFlow.js following reading the sections and embrace us in your journey exploring TensorFlow.js.
 
@@ -194,22 +194,22 @@ To interact with OpenAI's API using JavaScript/TypeScript, you'll need Node.js a
 * Visit the [Node.js official website](https://nodejs.org/) and download the LTS version.
 * After installation, verify by running these commands in your terminal or command prompt:
 
-| bash``node -v`` npm-v |
-| ----------------------------------- |
+| bash ``node -v`` npm-v |
+| ---------------------- |
 
 ### 3. Create a New Node.js Project:
 
 Initialize a new Node.js project:
 
-| bash``mkdir my-openai-project``cd my-openai-project``npminit -y |
-| ------------------------------------------------------------------------------------ |
+| bash ``mkdir my-openai-project``cd my-openai-project``npminit -y |
+| ---------------------------------------------------------------- |
 
 ### 4. Install the OpenAI Node.js SDK:
 
 Within your project directory, install the OpenAI SDK:
 
 | bash``npminstall openai |
-| ------------------------------ |
+| ----------------------- |
 
 ### 5. Extensions for VSCode:
 
@@ -239,19 +239,19 @@ To install an extension:
 Create a new `.js` file in your project, such as `index.js`. Open this file in VSCode and start integrating the OpenAI SDK. For security reasons, store your OpenAI API key in a `.env` file:
 
 | plaintext``OPENAI_API_KEY=YOUR_API_KEY_HERE |
-| -------------------------------------------------- |
+| ------------------------------------------- |
 
 And then in `index.js`:
 
-| javascript``require('dotenv').config();``const { OpenAIApi } =require('openai');``const openai =newOpenAIApi({``key: process.env.OPENAI_API_KEY``});``async function queryGPT3(promptText) {``const response =awaitopenai.complete({``model:"text-davinci-002",``prompt: promptText,``maxTokens:150``});`` returnresponse.data.choices[0].text.trim();``}``//Test the function``queryGPT3("Translate the following English text to French: 'Hello World'").then(console.log); |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| javascript ``require('dotenv').config();``const { OpenAIApi } =require('openai');``const openai =newOpenAIApi({``key: process.env.OPENAI_API_KEY ``});``async function queryGPT3(promptText) {``const response =awaitopenai.complete({``model:"text-davinci-002",``prompt: promptText,``maxTokens:150 ``});`` returnresponse.data.choices[0].text.trim();``}``//Test the function``queryGPT3("Translate the following English text to French: 'Hello World'").then(console.log); |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 ### 7. Running Your Code:
 
 You can run your code using Node.js:
 
 | bash``node index.js |
-| -------------------------- |
+| ------------------- |
 
 Now you've successfully set up OpenAI for development in VSCode. Remember to keep your API key secure and avoid hardcoding it directly into your scripts. Using environment variables, as shown above, is a safer practice.
 
@@ -276,3 +276,5 @@ ChatGPT Tip:It’s important to use Axios to access the OpenAI the Api of ChatGP
 ![1698146136910](image/README/1698146136910.png)
 
 **4. Create a Component for Chat Interface**
+
+![1698153506309](image/README/1698153506309.png)
