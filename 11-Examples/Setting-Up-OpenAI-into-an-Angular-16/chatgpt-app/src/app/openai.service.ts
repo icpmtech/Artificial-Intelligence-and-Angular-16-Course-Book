@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import axios from 'axios';
-
+require('dotenv').config();
 @Injectable({
   providedIn: 'root'
 })
 export class OpenaiService {
-
+ 
   private endpoint = 'https://api.openai.com/v1/engines/davinci/completions';
-  private apiKey = 'YOUR_OPENAI_API_KEY';  // Replace with your API key
+  private apiKey = process.env['OPENAI_API_KEY'];  // Replace with your API key
 
   constructor() { }
 

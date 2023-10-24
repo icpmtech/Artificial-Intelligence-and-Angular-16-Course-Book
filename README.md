@@ -273,4 +273,4 @@ ChatGPT Tip:It’s important to use Axios to access the OpenAI the Api of ChatGP
 
 ![1698145013290](image/README/1698145013290.png)
 
-![1698145102386](image/README/1698145102386.png)
+![1698146136910](image/README/1698146136910.png)
