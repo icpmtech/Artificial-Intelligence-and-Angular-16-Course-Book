@@ -256,35 +256,3 @@ You can run your code using Node.js:
 Now you've successfully set up OpenAI for development in VSCode. Remember to keep your API key secure and avoid hardcoding it directly into your scripts. Using environment variables, as shown above, is a safer practice.
 
 # **4.2 How to use TensorFlow.js in Angular v16**
-
-# **9. Project Ideas**
-
-## **9.1 AI-driven News Aggregator**
-
-## **9.2 E-commerce Site with AI Product Recommendations**
-
-## **9.3 Sentiment Analysis Tool for Social Media Posts**
-
-# **11.GitHub examples**
-
-### Setting Up OpenAI into an Angular 16
-
-ChatGPT Tip:It’s important to use Axios to access the OpenAI the Api of ChatGPT.
-
-#### **1. Set Up an Angular Project**
-
-![1698144694652](image/README/1698144694652.png)
-
-#### **2. Install Dependencies**
-
-![1698144940944](image/README/1698144940944.png)
-
-#### **3. Create a Service for OpenAI API**
-
-![1698145013290](image/README/1698145013290.png)
-
-![1698146136910](image/README/1698146136910.png)
-
-**4. Create a Component for Chat Interface**
-
-![1698153506309](image/README/1698153506309.png)
