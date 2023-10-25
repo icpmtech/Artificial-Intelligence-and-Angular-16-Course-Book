@@ -255,7 +255,15 @@ You can run your code using Node.js:
 
 Now you've successfully set up OpenAI for development in VSCode. Remember to keep your API key secure and avoid hardcoding it directly into your scripts. Using environment variables, as shown above, is a safer practice.
 
-## **11.GitHub examples**
+# **9. Project Ideas**
+
+## **9.1 AI-driven News Aggregator**
+
+## **9.2 E-commerce Site with AI Product Recommendations**
+
+## **9.3 Sentiment Analysis Tool for Social Media Posts**
+
+# **11.GitHub examples**
 
 ### Setting Up OpenAI into an Angular 16
 
