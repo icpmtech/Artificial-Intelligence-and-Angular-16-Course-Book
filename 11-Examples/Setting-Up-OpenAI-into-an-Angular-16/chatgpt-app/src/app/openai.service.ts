@@ -7,7 +7,7 @@ import OpenAI from "openai";
 export class OpenaiService {
  
   private endpoint = 'https://api.openai.com/v1/chat/completions';
-  private apiKey ="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";// process.env['OPENAI_API_KEY'];  // Replace with your API key https://plainenglish.io/blog/setup-dotenv-to-access-environment-variables-in-angular-9-f06c6ffb86c0
+  private apiKey ="";// process.env['OPENAI_API_KEY'];  // Replace with your API key https://plainenglish.io/blog/setup-dotenv-to-access-environment-variables-in-angular-9-f06c6ffb86c0
   
   constructor() { }
 
