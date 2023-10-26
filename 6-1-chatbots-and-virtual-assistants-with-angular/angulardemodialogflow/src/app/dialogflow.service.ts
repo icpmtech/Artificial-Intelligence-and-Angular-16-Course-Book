@@ -5,9 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ChatbotService {
-  private baseUrl = 'https://dialogflow.googleapis.com/v3/{your-project-id}/sessions/{session-id}:detectIntent';
+  private baseUrl = 'https://dialogflow.googleapis.com/v2/{your-project-id}/sessions/{session-id}:detectIntent';
   private token = 'YOUR_DIALOGFLOW_TOKEN'; // Ideally, this should be secured on the server-side
-
   constructor(private http: HttpClient) { }
 
   getResponse(query: string) {
