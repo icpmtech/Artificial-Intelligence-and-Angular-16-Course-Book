@@ -256,3 +256,14 @@ You can run your code using Node.js:
 Now you've successfully set up OpenAI for development in VSCode. Remember to keep your API key secure and avoid hardcoding it directly into your scripts. Using environment variables, as shown above, is a safer practice.
 
 # **4.2 How to use TensorFlow.js in Angular v16**
+
+### New Component
+
+```
+bash
+ng generate component app-user
+```
+
+![1698310065411](image/README/1698310065411.png)
+
+![1698311852712](image/README/1698311852712.png)
