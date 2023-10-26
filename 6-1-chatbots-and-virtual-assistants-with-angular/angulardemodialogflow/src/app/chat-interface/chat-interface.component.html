@@ -1,0 +1,8 @@
+<div class="container-chat">
+    <form [formGroup]="chatForm" (ngSubmit)="sendQuestion()">
+        <label for="first-name">Write an question to DialogFlow:</label>
+        <input title="Question" formControlName="question" name="question" placeholder="Hi!" type="text" />
+        <button type="submit">Send</button>
+        <p> DialogFlow result is: {{chatMessage}} </p>
+    </form>
+</div>
