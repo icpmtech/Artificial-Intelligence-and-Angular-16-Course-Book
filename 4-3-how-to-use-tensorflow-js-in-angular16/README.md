@@ -267,3 +267,11 @@ ng generate component app-user
 ![1698310065411](image/README/1698310065411.png)
 
 ![1698311852712](image/README/1698311852712.png)
+
+app-tensorflow-app
+├───.vscode
+├───src
+│   ├───app
+│   │   └───recurrent-neural-network
+│   └───assets
+├───node_modules
