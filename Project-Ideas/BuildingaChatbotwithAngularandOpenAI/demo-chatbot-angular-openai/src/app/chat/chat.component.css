@@ -1,0 +1,21 @@
+.chat-area {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.container {
+    background-color: #fff;
+    margin: 10px;
+}
+
+.user {
+    text-align: right;
+    color: blue;
+}
+
+.bot {
+    text-align: left;
+    color: green;
+}
