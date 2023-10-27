@@ -4,9 +4,11 @@ require("dotenv").config();
 // import modules from OpenAI library
 const OpenAIApi = require("openai");
 const bodyParser = require('body-parser');
+var cors = require('cors');
 const app = express();
 const PORT = 3000;
-const openai = new OpenAIApi.OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const openai = new OpenAIApi.OpenAI({ apiKey: 'APIKEY' });
+app.use(cors({ origin: true, credentials: true }));
 app.use(bodyParser.json());
 app.post('/getChatbotResponse', async(req, res) => {
     try {

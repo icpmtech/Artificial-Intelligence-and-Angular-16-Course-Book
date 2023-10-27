@@ -18,13 +18,12 @@ export class ChatComponent {
       headers: new HttpHeaders({
                    'Content-Type': 'application/json',
                    'Access-Control-Allow-Origin': '*',
-                   'Access-Control-Allow-Credentials': 'true'
       })
     };
     this.messages.push({ text: this.userInput, user: true });
-    this.http.post('http://localhost:3000/getChatbotResponse', { message: this.userInput }, httpOptions)
+    this.http.post('http://localhost:3000/getChatbotResponse', { text: this.userInput }, httpOptions)
       .subscribe((response: any) => {
-        this.messages.push({ text: response.text, user: false });
+        this.messages.push({ text: response.response, user: false });
         this.userInput = '';
       });
   }
